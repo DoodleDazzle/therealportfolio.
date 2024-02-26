@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwa's Portfolio</title>
+    <style>
+        .section__text__p2 {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .show {
+            opacity: 1;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vishwa Panchal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Vishwa Panchal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Vishwa Panchal profile picture" />
+        </div>
+        <div class="section__text" id="text-container">
+            <p class="section__text__p1">Hello, Myself</p>
+            <h1 class="title">Vishwa Panchal</h1>
+            <p class="section__text__p2" id="role-text">Computer Science Professional</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Vishwa panchal.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'" />
+                <img src="./assets/instagram.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/vishwaapanchall/'" />
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Internship at Karma foundation as Content Writer. <br />Next one as inhouse intern, work of Data Analytics and SEO.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>Diploma in Computer Science and Engineering.<br/>B.Tech in Computer Science and Engineering with Specilization: Cloud based Applications</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a computer science professional, my objective is to secure a position in a forward-thinking organization where I can apply my knowledge and skills to drive innovation and contribute to the company's technological advancement. With a solid foundation
+                        in computer science principles, I aim to tackle complex challenges and develop efficient software solutions. I will continuously enhance my expertise by staying up-to-date with the latest technological advancements, supporting
+                        the organization's growth initiatives. My growth mindset and passion for continuous learning drive my commitment to professional development and contribute to both organizational and personal growth.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Certification</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3><a href="https://drive.google.com/file/d/1XEU066VX2W_xjNTWHeVvNanXPnkEBYUA/view?usp=sharing" target="_blank">Google Analytics</a></h3>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3><a href="https://drive.google.com/file/d/1euNe-dCYvVJ2KvN6Yek9817oNZfmsdhz/view?usp=sharing" target="_blank">Letter of Appreciation</a></h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3><a href="https://drive.google.com/file/d/1KrdODwnH_TlpEfpG00J7AX02g0J-pccI/view?usp=sharing" target="_blank">Data Analysis with Python</a></h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>
+                                    <a href="https://drive.google.com/file/d/1typD8Z-YcT_MZRpbpwuJhf13HSeWaMwy/view?usp=sharing" target="_blank">SQL for Joining Data   </a></h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3><a href="https://drive.google.com/file/d/1XU6IAczNnB-FDnJIYYLBVO8Zx7urrN7M/view?usp=sharing" target="_blank">Introduction to Cloud</a></h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3><a href="https://drive.google.com/file/d/1ui-GjGrnBrKhww7YQX2tKVzRhxVfFM8j/view?usp=sharing" target="_blank">Machine Learning with Python</a></h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-container">
+            <h1>Coming Soon</h1>
+            </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:panchalvishwa6@gmail.com">panchalvishwa6@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+            <!-- New contact information -->
+            <div class="contact-info-container">
+                <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+                <p>+91-9723343639</p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/home-address.png" alt="Address icon" class="icon contact-icon" />
+                <p>4, Manu Panchal Society, Bhimjipura, New Vadaj, Opp: Janak medical, India, Gujarat, Ahmedabad-380013</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script>
+            function showText() {
+                const textElements = document.querySelectorAll('.section__text__p2');
+                textElements.forEach((element, index) => {
+                    setTimeout(() => {
+                        element.classList.add('show');
+                    }, index * 2000);
+                });
+            }
+
+
+            showText();
+        </script>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Vishwa Panchal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
