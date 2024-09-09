@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const roles = [
-        "Full Stack Developer",
-        "Cloud Based Developer",
-        "Passionate Programmer",
+        "Cloud Engineer",
+        "Web Developer",
         "Frontend Developer",
+        "Passionate Programmer",
     ];
     let index = 0;
     const roleText = document.getElementById('role-text');
@@ -17,7 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 
-
+    function animate() {
+        // Your animation logic here
+        requestAnimationFrame(animate);
+    }
+    animate();
+    
     toggleRoles();
 
 

@@ -17,6 +17,7 @@
     /* Add this class to the HTML tag */
     overflow: hidden;
     /* Hide scrollbars */
+    
 }
 
 .title {
@@ -35,6 +36,30 @@
     cursor: pointer;
     /* Change color on hover */
 }
+.icon-container {
+  display: inline-block;
+  background-color: #1a1a1a; /* Background color of your icon container */
+  border-radius: 50%; /* To make it circular */
+  width: 30px; /* Set the width you prefer */
+  height: 30px; /* Set the height you prefer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Make sure the image stays inside the circle */
+}
+
+.custom-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* To ensure the image fits inside */
+  border-radius: 50%; /* To keep the image circular */
+}
+
+/* Example of smooth transition */
+#role-text {
+    transition: opacity 0.5s ease-in-out;
+}
+
 
 
 /* CSS for transition effect on role */
